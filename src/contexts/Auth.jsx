@@ -96,52 +96,15 @@ function AuthProvider({children}) {
                 localStorage.setItem("adm-suachave", JSON.stringify(result.data));
                newAccess({idCompany: result.data.id, idTeam: "", device, browser, latitude, longitude, ipDevice});
 
-                ferifyStatusAccount(result.data.id, result.data.date)
+               window.open("/home", "_self")
+
+                
                 toast.success(`Entrando...`);
             }).catch(error => {
                 console.log("Login não foi realizado" + error);
                 setLoading(false);
             })        
     }  
-
-
-        async function ferifyStatusAccount(id, data) {
-            const d1  = new Date(data);
-            const d2 = new Date();
-            const diffInMs   = new Date(d2) - new Date(d1);
-            const diffInDays = parseInt(diffInMs / (1000 * 60 * 60 * 24));
-
-            if(diffInDays >= 8) {
-                verifyPaymentStatus(id)
-                return;
-            }
-
-            if(diffInDays < 8) {
-                window.open("/periodo-teste", "_self");
-                return;
-            }
-
-        }
-
-        async function verifyPaymentStatus(id) {
-            const payment =  await api.get(`/payments/${id}`)
-
-            const d1  = new Date(payment.data[0]?.created_at);
-            const d2 = new Date();
-            const diffInMs   = new Date(d2) - new Date(d1);
-            const diffInDays = parseInt(diffInMs / (1000 * 60 * 60 * 24));
-
-            if(payment.data.length === 0) {
-                window.open("/fim-periodo-teste", "_self");
-                return;
-            }
-
-            if(payment.data[0]?.status === "Pendente" && diffInDays >= 6) {
-                window.open("/pagamento-pendente", "_self");
-                return;
-            }
-        }
-
 
 
     async function loginAndUpdatePassword({email, password, passwordNew}) {
