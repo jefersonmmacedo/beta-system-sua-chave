@@ -21,7 +21,7 @@ export function MyAppointments() {
     const [search, setSearch] = useState("");
     const searchLower = search.toLowerCase();
 
-    const {data} = useFetch(`/scheduling/company/${user.id}`);
+    const {data} = useFetch(`/scheduling`);
 
     if(!data) {
         return (

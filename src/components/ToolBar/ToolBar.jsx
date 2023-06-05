@@ -104,26 +104,26 @@ export function ToolBar() {
                     <MdOutlineChecklistRtl /><p>Vistorias</p>
                     </a>
                 </div> */}
-                <div className="ToolUnic2">
+                {/* <div className="ToolUnic2">
                    <a href="/encargos">
                     <RiExchangeDollarLine /><p>Encargos</p>
                     </a>
-                </div>
-                <div className="ToolUnic2">
+                </div> */}
+                {/* <div className="ToolUnic2">
                    <a href="/financeiro">
                     <TbCurrencyDollar /><p>Financeiro</p>
                     </a>
-                </div>
-                <div className="ToolUnic2">
+                </div> */}
+                {/* <div className="ToolUnic2">
                    <a href="/tickets">
                     <IoTicketOutline /><p>Tickets</p>
                     </a>
-                </div>
-                <div className="ToolUnic2">
+                </div> */}
+                {/* <div className="ToolUnic2">
                    <a href="/sites">
                     <IoLaptopOutline /><p>Sites</p>
                     </a>
-                </div>
+                </div> */}
                 <div className="ToolUnic">
                    <a href="/minhaconta">
                     <IoPersonOutline /><p>Conta</p>

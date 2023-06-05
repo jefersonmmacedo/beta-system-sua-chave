@@ -8,7 +8,7 @@ export function CountersMatchProperty({status,type,subType,uf,city,district,bedr
     //     `/property/list/match/${status}?type=${type}&subType=${subType}&uf=${uf}&city=${city}&district=${district}&bedroom=${bedroom}&restroom=${restroom}&garage=${garage}&suite=${suite}&pets=${pets}&furnished=${furnished}`
     //     );
 
-    const {data} = useFetch(`/property/company/${user.id}`);
+    const {data} = useFetch(`/property/lists/propertiesAll`);
 
     if(!data) {
         return (

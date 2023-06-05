@@ -18,7 +18,7 @@ export function MyContracts() {
     const Local = localStorage.getItem("adm-suachave");
     const user = JSON.parse(Local);
 
-    const {data} = useFetch(`/contracts/company/${user.id}`);
+    const {data} = useFetch(`/contracts`);
 
     if(data) {
         console.log(data);

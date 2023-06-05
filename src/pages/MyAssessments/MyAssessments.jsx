@@ -11,7 +11,7 @@ export function MyAssessments() {
     const Local = localStorage.getItem("adm-suachave");
     const user = JSON.parse(Local);
 
-    const {data} = useFetch(`/evaluation/company/${user.id}`);
+    const {data} = useFetch(`/evaluation`);
 
     if(data) {
        console.log(data);

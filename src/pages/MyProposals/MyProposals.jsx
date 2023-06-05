@@ -17,7 +17,7 @@ export function MyProposals() {
     const Local = localStorage.getItem("adm-suachave");
     const user = JSON.parse(Local);
 
-    const {data} = useFetch(`/negotiations/company/${user.id}`);
+    const {data} = useFetch(`/proposals`);
 
     if(!data) {
         return (

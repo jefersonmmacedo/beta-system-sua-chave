@@ -67,7 +67,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     text-decoration: none;
-    background-color: var(--BorderInput2);
+    background-color: var(--White);
     padding: 10px 20px;
     width: 100%;
     font-size: 16px;
@@ -102,7 +102,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     text-decoration: none;
-    background-color: var(--BorderInput2);
+    background-color: var(--White);
     padding: 10px 20px;
     width: 100%;
     font-size: 16px;
@@ -137,7 +137,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     text-decoration: none;
-    background-color: var(--BorderInput2);
+    background-color: var(--White);
     padding: 10px 20px;
     width: 100%;
     font-size: 16px;
