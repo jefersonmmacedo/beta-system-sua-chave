@@ -252,7 +252,7 @@ export function SignUpProfessional() {
 
 
                         <div className="buttons">
-                         {avatarUrl !== null && road !== "" && number !== "" && district !== ""  && city !== "" && uf !== "" && district !== "" ? 
+                         {avatarUrl !== null ? 
                         <button className="btn5" onClick={handleNewAccount}>Cadastrar</button>
                          : ""                        
                           }
